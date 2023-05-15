@@ -22,6 +22,7 @@ html {
 /* End Global rules  */
 
 /* start  global element  */
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -31,7 +32,13 @@ html {
   .container {
     width: 95%;
   }
+  section , #send-mail , footer{
+    overflow-x: hidden;
+  }
 }
+@media (max-width: 376px) {
+}
+
 .fixed-title {
   display: flex;
   align-items: center;
@@ -411,6 +418,11 @@ nav .search {
   text-transform: capitalize;
   align-items: center;
 }
+@media (width < 768px){
+  #services .container .fixed-title >h1{
+    font-size: 30px;
+  }
+}
 #services .service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -462,6 +474,11 @@ nav .search {
   border-radius: 15px;
   cursor: pointer;
 }
+@media (width <= 768px){
+  #portfolio .filter-nav > ul > li{
+    padding: 8px;
+  }
+}  
 .active {
   background-color: #f12702;
   color: var(--Yellow-color) !important;
@@ -552,6 +569,11 @@ nav .search {
 }
 .stores .story {
   text-align: center;
+}
+@media (width <= 768px) {
+  #about .container .stores{
+    gap: 30px;
+  }
 }
 
 .stores .story p {
@@ -656,7 +678,7 @@ nav .search {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
+  height: 560px;
   position: relative;
 }
 @media(width < 768px){
@@ -863,7 +885,7 @@ nav .search {
 @media(width<991px){
   .definition .container > .typing-animation{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 
   }
   .definition .container >.typing-animation >.typing-text {
@@ -1071,6 +1093,11 @@ footer .container .web-info .info-devoloper > p span:last-child {
 #footer .container .contact-us {
   flex-basis: 40%;
 }
+@media (width <= 768px) {
+  #footer .container .contact-us{
+    margin-top: 20px;
+  }
+}
 
 #footer .container .contact-us p {
   color: #777;
@@ -1118,7 +1145,7 @@ footer .container .web-info .info-devoloper > p span:last-child {
 /* End add feature for button to scroll up */
 
 
-/* For Webkit browsers */
+
 
 /* start  to change the bar scroll  */
 ::-webkit-scrollbar {
@@ -1132,5 +1159,4 @@ footer .container .web-info .info-devoloper > p span:last-child {
 ::-webkit-scrollbar-thumb {
   background: var(--main-secondary-color);
 }
-
 /* End  to change the bar scroll  */
