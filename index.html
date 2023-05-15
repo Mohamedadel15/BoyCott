@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- main file java script -->
     <script src="js/main.js" defer></script>
-
-    <title>Bondi</title>
+    <!-- to change Icone title -->
+    <link rel="icon" href="./images/icone.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="./images/icone.jpg" type="image/png">
+    <title>BoyCott</title>
 </head>
 
 <body>
@@ -39,10 +41,17 @@
                         <li><a href="#send-mail">contact</a></li>
                     </ul>
                     <div class="search">
-                        <input type="text" id="search-ipt" placeholder="Search">
-                        <i class="fa-solid fa-magnifying-glass search-icone"></i>
+                        <input type="text" id="search-ipt" placeholder="Search for ur pruduct">
+                        <!-- <i class="fa-solid fa-magnifying-glass search-icone"></i> -->
+                        <i class="fa-regular fa-circle-xmark search-icone"></i>
+                        <div>
+                            <h2>design</h2>
+                            <h2>code</h2>
+                            <h2>photography</h2>
+                            <h2>app</h2>
+                        </div>
                     </div>
-                    <button class="login-btn">Login</button>
+                    <button class="login-btn">join us</button>
                     <i class="fa-solid fa-bars menu-icone"></i>
                 </nav>
             </header>
@@ -109,15 +118,15 @@
             </div>
             <nav class="filter-nav">
                 <ul>
-                    <li class="active">all</li>
-                    <li>design</li>
-                    <li>code</li>
-                    <li>photography</li>
-                    <li>app</li>
+                    <li class="active" data-name="all">all</li>
+                    <li data-name="design">design</li>
+                    <li data-name="code">code</li>
+                    <li data-name="photography">photography</li>
+                    <li data-name="app">app</li>
                 </ul>
             </nav>
             <div class="container-filter-image">
-                <div class="card">
+                <div class="card design all">
                     <img src="./images/image-1.jpg" alt="service image 1">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -125,7 +134,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card code all">
                     <img src="./images/image-2.jpg" alt="service image 2">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -133,7 +142,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card design all">
                     <img src="./images/image-3.jpg" alt="service image 3">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -141,7 +150,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card photography all">
                     <img src="./images/image-4.jpg" alt="service image 4">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -149,7 +158,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card design all">
                     <img src="./images/image-5.jpg" alt="service image 5">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -157,7 +166,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card app all">
                     <img src="./images/image-6.jpg" alt="service image 6">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -165,7 +174,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card code all">
                     <img src="./images/image-7.jpg" alt="service image 7">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -173,7 +182,7 @@
                         <p class="text price">1.654,34€</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card design all">
                     <img src="./images/image-8.jpg" alt="service image 8">
                     <div class="textBox">
                         <p class="text head">awesome work</p>
@@ -201,7 +210,6 @@
     <!-- End section create new project  -->
 
     <!-- start section about -->
-
     <section id="about">
         <div class="container">
             <div class="fixed-title">
@@ -272,7 +280,7 @@
                 </div>
             </div>
             <div class="card">
-         
+
                 <div class="text">
                     <h1>mohamed adel</h1>
                     <h3>junior front end developer</h3>
@@ -300,7 +308,7 @@
             </div>
             <div class="typing-animation">
                 <h1 class="typing-text"></h1>
-              </div>
+            </div>
         </div>
 
     </section>
@@ -335,6 +343,50 @@
     <!-- End section meet the teem -->
 
     <!-- start form send me validation mail -->
+
+    <!-- start section add feedback  -->
+    <section id="feedBack">
+        <div class="container">
+            <form class="form">
+                <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>first name</span>
+                    </label>
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>last name</span>
+                    </label>
+                </div>
+
+                <label>
+                    <input required="" placeholder="" type="email" class="input" id="email-valid">
+                    <span>email</span>
+                </label>
+
+                <label>
+                    <input required="" type="tel" placeholder="" class="input">
+                    <span>contact number</span>
+                </label>
+                <label>
+                    <textarea required="" rows="3" placeholder="" class="input"></textarea>
+                    <span>message</span>
+                </label>
+
+                <button class="fancy" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">send</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </button>
+            </form>
+
+        </div>
+
+    </section>
+    <!-- End section add feedback  -->
+
+    <!--  start form send me validation mail -->
     <form action="#" id="send-mail">
         <div class="container">
             <label for="sub-mail">
