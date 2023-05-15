@@ -36,6 +36,9 @@ html {
     overflow-x: hidden;
   }
 }
+@media (max-width: 376px) {
+}
+
 .fixed-title {
   display: flex;
   align-items: center;
@@ -163,7 +166,7 @@ button:hover {
 
 @media (max-width: 769px) {
   .started header ul {
-    max-width: 100%;
+    max-width: 110%;
     right: 0;
   }
 }
@@ -240,7 +243,11 @@ nav .search {
   cursor: pointer;
   transition: all 0.9s linear !important;
 }
-
+@media (width <= 768px) {
+  .started .container header nav button.login-btn{
+    display: none;
+  }
+}
 /* End header */
 
 /* ------------------------------------- */
