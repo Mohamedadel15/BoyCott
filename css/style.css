@@ -211,7 +211,7 @@ button:hover {
 
 @media (max-width: 769px) {
   .started header ul {
-    max-width: 110%;
+    max-width: 100%;
     right: 0;
   }
 }
@@ -301,7 +301,6 @@ nav .search {
 
 .started header nav .search div {
   position: absolute;
-  /* height: 0; */
   opacity: 0;
   padding: 20px;
   width: 100%;
